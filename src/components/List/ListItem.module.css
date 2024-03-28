@@ -1,0 +1,94 @@
+.itemContainer {
+  display: flex;
+  flex: 1;
+  gap: 0.75rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+}
+
+.itemContainer div {
+  display: flex;
+}
+
+.itemContainer label {
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.itemContainer label input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox {
+  border-radius: 100%;
+  height: 1.125rem;
+  width: 1.125rem;
+
+  transition: 0.2s all;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-unchecked {
+  border: 2px solid var(--blue-700);
+}
+
+.checkbox-unchecked:hover {
+  background-color: rgba(30, 111, 159, 0.2);
+}
+
+.checkbox-checked {
+  background-color: var(--purple-700);
+  color: var(--gray-100);
+}
+
+.checkbox-checked:hover {
+  background-color: var(--purple-300);
+}
+
+.paragraph {
+  color: var(--gray-100);
+  line-height: 140%;
+  font-size: 0.875rem;
+  user-select: none;
+
+  transition: 0.2s all;
+}
+
+.paragraph-checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.itemContainer button {
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+
+  padding: 5px 4px 2px 4px;
+
+  transition: 0.2s background-color;
+}
+
+.itemContainer button svg {
+  transition: 0.2s fill;
+}
+
+.itemContainer button:hover {
+  background-color: var(--gray-400);
+}
+
+.itemContainer button:hover svg {
+  fill: var(--red-500);
+}
